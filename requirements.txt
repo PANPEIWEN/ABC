@@ -1,0 +1,3 @@
+mmcv-full==1.4.0
+mmdet==2.25.0
+mmsegmentation==0.28.0

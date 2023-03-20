@@ -3,7 +3,6 @@ Infrared small target detection (ISTD) has a wide range of applications in early
 
 We have open sourced a framework for infrared small target segmentation, which can easily add and modify models, train and test, etc. Welcome to use: https://github.com/PANPEIWEN/Infrared-Small-Target-Segmentation-Framework
 
-![](imgs/fig1.jpg)
 ![](imgs/FULLcolt.jpg)
 ## Performance
 | **Dataset** | **IoU** | **nIoU** | **F1** |

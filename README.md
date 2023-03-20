@@ -2,6 +2,17 @@
 Infrared small target detection (ISTD) has a wide range of applications in early warning, rescue, and guidance. However, CNN based deep learning methods are not effective at segmenting infrared small target (IRST) that it lack of clear contour and texture features, and transformer based methods also struggle to achieve significant results due to the absence of convolution induction bias. To address these issues, we propose a new model called attention with bilinear correlation (ABC), which is based on the transformer architecture and includes a convolution linear fusion transformer (CLFT) module with a novel attention mechanism for feature extraction and fusion, which effectively enhances target features and suppresses noise. Additionally, our model includes a u-shaped convolution-dilated convolution (UCDC) module located deeper layers of the network, which takes advantage of the smaller resolution of deeper features to obtain finer semantic information. Experimental results on public datasets demonstrate that our approach achieves state-of-the-art performance.
 
 We have open sourced a framework for infrared small target segmentation, which can easily add and modify models, train and test, etc. Welcome to use: https://github.com/PANPEIWEN/Infrared-Small-Target-Segmentation-Framework
+
+![](imgs/fig1.jpg)
+![](imgs/FULLcolt.jpg)
+## Performance
+| **Dataset** | **IoU** | **nIoU** | **F1** |
+|:-----------:|:-------:|:--------:|:------:|
+|    [NUAA](https://openaccess.thecvf.com/content/WACV2021/papers/Dai_Asymmetric_Contextual_Modulation_for_Infrared_Small_Target_Detection_WACV_2021_paper.pdf)     |  81.01  |  79.00   | 89.51  |
+|   [IRSTD1k](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhang_ISNet_Shape_Matters_for_Infrared_Small_Target_Detection_CVPR_2022_paper.pdf)   |  72.02  |  68.81   | 83.73  |
+|  [SIRSTAUG](https://arxiv.org/pdf/2111.03580.pdf)   |  76.12  |  71.83   | 86.44  |
+|     [NUDT](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9864119)    |  92.85  |  92.45   | 96.29  |
+
 ## Installation
 ```angular2html
 pip install -U openmim

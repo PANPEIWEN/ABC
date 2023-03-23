@@ -84,7 +84,7 @@ python -m torch.distributed.launch --nproc_per_node=4 train.py configs/abcnet/ab
 python test.py <CONFIG_FILE> <SEG_CHECKPOINT_FILE>
 ```
 
-For example, test ACM model with fpn, run:
+For example:
 
 ```
 python test.py configs/abcnet/abcnet_clft-l_512x512_1500e.py work_dirs/abcnet_clft-l_512x512_1500e/20221009_231431/best.pth.tar

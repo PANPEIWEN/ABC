@@ -6,7 +6,7 @@ model = dict(
         type=None
     ),
     decode_head=dict(
-        type='ABC',
+        type='ABCNet',
         in_ch=3,
         out_ch=1,
         dim=64, # in dim

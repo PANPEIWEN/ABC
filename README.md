@@ -15,6 +15,13 @@ We have open sourced a framework for infrared small target segmentation, which c
 
 ## Installation
 ```angular2html
+# Python == 3.8
+# Pytorch == 1.10
+# Cuda == 11.1
+
+conda create -n ABC python=3.8
+conda install pytorch==1.10.0 torchvision==0.11.1 torchaudio==0.10.0 cudatoolkit=11.1 -c pytorch -c nvidia
+
 pip install -U openmim
 mim install mmcv-full==1.7.0
 mim install mmdet==2.25.0
